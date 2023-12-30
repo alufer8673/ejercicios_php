@@ -8,10 +8,8 @@
     <title>Ejercicio3</title>
 </head>
 <body>
-    <h1> Ejercicio1</h1>
-    <br>
-    El resultado de la consulta es:
-    <br>
+<h1> Ejercicio 3</h1>
+<p>El resultado de la consulta es:</p>
 
 <?php
 ini_set('display_errors', 1);

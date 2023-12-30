@@ -43,7 +43,8 @@ if ($resultado = mysqli_query($conn, $sql)) {
     </style>
 </head>
 <body>
-
+    <h1> Ejercicio 5</h1>
+    <p>El resultado de la consulta es:</p>
     <table cellpadding="0" cellspacing="0">
         <tr>
             <td><strong>NOMBRE ARTISTA</strong></td>

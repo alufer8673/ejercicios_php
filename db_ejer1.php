@@ -8,6 +8,8 @@
     <title>Ejercicio1</title>
 </head>
 </body>
+<h1>Ejercicio 1</h1>
+<p>El resultado de la consulta es:</p>
 <?php
     $server='mysql';
     $bd='musica';

@@ -8,6 +8,8 @@
     </style>
 </head>
 <body>
+<h1> Ejercicio 7</h1>
+<p>El resultado de la consulta es:</p>
 
 <?php
 
