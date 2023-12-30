@@ -1,6 +1,16 @@
 <?php
-echo "El día de hoy es: " . date("d/m/Y") . "<br>";
-echo  "El día de la semana es: " . date("l") . "<br>";
-$nueva=mktime( 0, 0, 0, date("m") +2, date("d"), date("Y"));
-echo "En dos meses la fecha será: " . date("d-F-Y",$nueva);
+    $dias_semana = array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+
+    $dia = date("w");
+
+    $fecha_actual = date("d - m - Y");
+
+    $nombre_dia = $dias_semana[$dia];
+
+    $fecha_dos_meses_mas = date("d \d\e F \d\e Y", strtotime("+2 months"));
+
+    echo "Día de la semana: " . $nombre_dia . "<br>";
+    echo "Fecha actual: " . $fecha_actual . "<br>";
+
+    echo "Fecha 2 meses posterior: " . $fecha_dos_meses_mas;
 ?>
