@@ -1,20 +1,28 @@
 <?php
-define('NUM_FILAS', 10);
-define('NUM_COLUMNAS', 10);
+    echo "<table border=1>";
 
-echo "<table border='1'>";
+    $num = 1;
 
-for ($a = 1; $a <= NUM_FILAS; $a++) {
-    echo "<tr";
-    echo ($a % 2 == 0) ? " style='background-color: lightgray;'" : "";
-    echo ">";
+    for ($i = 1; $i <= 10; $i++){
+        $modulo = $i  % 2;
 
-    for ($b = 1; $b <= NUM_COLUMNAS; $b++) {
-        echo "<td>" . (($a - 1) * NUM_COLUMNAS + $b) . "</td>";
+        if ($modulo == 0 ){
+            echo "<tr>";
+            for ($j = 1; $j <= 10; $j++){
+                echo "<td bgcolor=\"gray\">$num</td>";
+                $num++;
+            }
+            echo "</tr>";
+        }else{
+            echo "<tr>";
+            for ($j = 1; $j <= 10; $j++){
+                echo "<td>$num</td>";
+                $num++;
+            }
+            echo "</tr>";
+        }
+
     }
 
-    echo "</tr>";
-}
-
-echo "</table>";
+    echo "</table";
 ?>
